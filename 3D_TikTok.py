@@ -70,3 +70,8 @@ class tic_tac_toe_3D():
         self.prYellow(
             f"                     /   {board[25]:2}   /   {board[26]:2}   /    {board[27]:2}  /")
         self.prYellow("                    /________/________/________/")
+
+        
+    def get_random_starter(self):
+        starter_index = rd.randint(0, 1)
+        return starter_index
