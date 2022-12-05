@@ -27,3 +27,46 @@ class tic_tac_toe_3D():
         # print(f"{players[starter_index]['name']} is starting the game!")
         names = [name1, name2]
         return names
+
+    def print_board(self,board):
+        self.prPurple("                             ___________________________")
+        self.prPurple("                            /        /        /        /")
+        self.prPurple(
+            f"                           /    {board[1]:2}  /    {board[2]:2}  /    {board[3]:2}  /")
+        self.prPurple("                          /________/________/________/")
+        self.prPurple("                         /        /        /        /")
+        self.prPurple(
+            f"                        /   {board[4]:2}   /   {board[5]:2}   /     {board[6]:2} /")
+        self.prPurple("                       /________/________/________/")
+        self.prPurple("                      /        /        /        /")
+        self.prPurple(
+            f"                     /    {board[7]:2}  /    {board[8]:2}  /     {board[9]:2} /")
+        self.prPurple("                    /________/________/________/")
+
+        self.prGreen("                             ___________________________")
+        self.prGreen("                            /        /        /        /")
+        self.prGreen(
+            f"                           /   {board[10]:2}   /    {board[11]:2}  /    {board[12]:2}  /")
+        self.prGreen("                          /________/________/________/")
+        self.prGreen("                         /        /        /        /")
+        self.prGreen(
+            f"                        /   {board[13]:2}   /   {board[14]:2}   /    {board[15]:2}  /")
+        self.prGreen("                       /________/________/________/")
+        self.prGreen("                      /        /        /        /")
+        self.prGreen(
+            f"                     /   {board[16]:2}   /   {board[17]:2}   /    {board[18]:2}  /")
+        self.prGreen("                    /________/________/________/")
+
+        self.prYellow("                             ___________________________")
+        self.prYellow("                            /        /        /        /")
+        self.prYellow(
+            f"                           /   {board[19]:2}   /   {board[20]:2}   /    {board[21]:2}  /")
+        self.prYellow("                          /________/________/________/")
+        self.prYellow("                         /        /        /        /")
+        self.prYellow(
+            f"                        /   {board[22]:2}   /   {board[23]:2}   /    {board[24]:2}  /")
+        self.prYellow("                       /________/________/________/")
+        self.prYellow("                      /        /        /        /")
+        self.prYellow(
+            f"                     /   {board[25]:2}   /   {board[26]:2}   /    {board[27]:2}  /")
+        self.prYellow("                    /________/________/________/")
