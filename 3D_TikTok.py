@@ -88,3 +88,6 @@ class tic_tac_toe_3D():
             players.append(curr_player)
 
         return players
+
+    def update_num_of_wins(self,players: list[dict], winner_index: int):
+        players[winner_index]["num_of_wins"] += 1
