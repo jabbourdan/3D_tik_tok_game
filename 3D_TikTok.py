@@ -75,3 +75,16 @@ class tic_tac_toe_3D():
     def get_random_starter(self):
         starter_index = rd.randint(0, 1)
         return starter_index
+
+    def create_players(self,names: list[str], starter_index):
+        players = []
+
+        for i in range(2):
+            curr_player = {"name": names[i].title(), "num_of_wins": 0}
+            if i == starter_index:
+                curr_player["sign"] = "X"
+            else:
+                curr_player["sign"] = "O"
+            players.append(curr_player)
+
+        return players
