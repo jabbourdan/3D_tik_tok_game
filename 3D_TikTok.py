@@ -91,3 +91,9 @@ class tic_tac_toe_3D():
 
     def update_num_of_wins(self,players: list[dict], winner_index: int):
         players[winner_index]["num_of_wins"] += 1
+
+
+
+    def make_move(self,board, players, turn_index):
+        move = self.get_player_move(board, players, turn_index)
+        board[int(move)] = players[turn_index]["sign"] 
