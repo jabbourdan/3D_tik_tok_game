@@ -113,3 +113,10 @@ class tic_tac_toe_3D():
                     "    | Invalid move, your move is out of range or cell is taken, try again. |")
                 self.prRed(
                     "    |______________________________________________________________________|")
+        else:
+            self.prRed("                     ____________________________________")
+            self.prRed("                    |                                    |")
+            self.prRed("                    | Invalid input, insert numbers only.|")
+            self.prRed("                    |____________________________________|")
+
+        return answer
