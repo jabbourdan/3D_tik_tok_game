@@ -97,3 +97,19 @@ class tic_tac_toe_3D():
     def make_move(self,board, players, turn_index):
         move = self.get_player_move(board, players, turn_index)
         board[int(move)] = players[turn_index]["sign"] 
+
+    def is_move_valid(self,board: list[dict], player_move: str):
+        answer = False
+        if player_move.isdigit():
+            #print(" board.values()",  board.values())
+            if player_move in board.values():  # check if move is possible in board
+                answer = True
+            else:
+                self.prRed(
+                    "     ______________________________________________________________________")
+                self.prRed(
+                    "    |                                                                      |")
+                self.prRed(
+                    "    | Invalid move, your move is out of range or cell is taken, try again. |")
+                self.prRed(
+                    "    |______________________________________________________________________|")
