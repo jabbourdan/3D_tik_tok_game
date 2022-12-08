@@ -120,3 +120,7 @@ class tic_tac_toe_3D():
             self.prRed("                    |____________________________________|")
 
         return answer
+
+    def change_turn(self,turn_i):
+        next_turn = turn_i + 1
+        return next_turn % 2    
