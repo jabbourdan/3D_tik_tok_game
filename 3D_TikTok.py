@@ -124,3 +124,18 @@ class tic_tac_toe_3D():
     def change_turn(self,turn_i):
         next_turn = turn_i + 1
         return next_turn % 2    
+
+    def get_player_move(self,board, players, turn_index) -> str:
+        is_valid = False
+        name = players[turn_index]['name']
+        sign = players[turn_index]['sign']
+        while not is_valid:
+            print()
+            player_move = input(
+                f"{name}, choose a number from the board to put your {sign} in: ")
+            is_valid = self.is_move_valid(board, player_move)
+
+        return player_move
+
+
+# print(f"players: {players}")
