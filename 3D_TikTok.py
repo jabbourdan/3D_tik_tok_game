@@ -137,5 +137,3 @@ class tic_tac_toe_3D():
 
         return player_move
 
-
-# print(f"players: {players}")
