@@ -137,3 +137,8 @@ class tic_tac_toe_3D():
 
         return player_move
 
+    def turn(self,board, players, turn_index):
+        self.print_board(board)
+        self.make_move(board, players, turn_index)
+        is_finished = self.is_game_over(board)
+        return is_finished
