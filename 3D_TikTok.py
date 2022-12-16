@@ -142,3 +142,7 @@ class tic_tac_toe_3D():
         self.make_move(board, players, turn_index)
         is_finished = self.is_game_over(board)
         return is_finished
+
+    def init(self):
+        board = {num: str(num) for num in range(1, 28)}
+        return board
