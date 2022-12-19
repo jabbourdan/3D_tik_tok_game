@@ -146,3 +146,6 @@ class tic_tac_toe_3D():
     def init(self):
         board = {num: str(num) for num in range(1, 28)}
         return board
+    
+    def is_answer_valid(self,answer):
+        return answer == "y" or answer == "n"
