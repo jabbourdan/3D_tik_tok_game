@@ -149,3 +149,20 @@ class tic_tac_toe_3D():
     
     def is_answer_valid(self,answer):
         return answer == "y" or answer == "n"
+    
+    def is_repeat_game(self):
+        valid = False
+        counter = 0
+
+        while valid == False and counter < 3:
+            print()
+            answer = input("Would you like to play another game? prass y or n: ")
+            print()
+            if (answer == 'y') or (answer == 'yes'):
+                print()
+                self.prGreen("                     ██████████████████████████████████████ ")
+                self.prGreen("                     █████ Let\'s play another game!! ██████ ")
+                self.prGreen("                     ██████████████████████████████████████ ")
+                print()
+                valid = True
+                answer = True
