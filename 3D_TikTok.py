@@ -166,3 +166,17 @@ class tic_tac_toe_3D():
                 print()
                 valid = True
                 answer = True
+            elif (answer == 'n') or (answer == 'no'):
+                self.prGreen("-" * 80)
+                print()
+                self.prGreen('                        See you next time! Bye...')
+                print()
+
+                valid = True
+                answer = False
+
+            else:
+                print("Invalid input")
+                counter += 1
+
+        return answer
