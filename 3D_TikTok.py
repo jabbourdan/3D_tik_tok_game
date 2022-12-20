@@ -180,3 +180,9 @@ class tic_tac_toe_3D():
                 counter += 1
 
         return answer
+    
+    def check_draw(self,board):
+        for val in board.values():
+            if val.isdigit():
+                return False
+        return True
