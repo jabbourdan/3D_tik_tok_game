@@ -186,3 +186,16 @@ class tic_tac_toe_3D():
             if val.isdigit():
                 return False
         return True
+    
+    def print_end_message(self,players):
+        self.prGreen("-" * 80)
+        print()
+        self.prGreen("                        Hope you enjoyed the game")
+        print()
+        self.prGreen(
+            f"                            {players[0]['name']} is with {players[0]['num_of_wins']} wins")
+        print()
+        self.prGreen(
+            f"                            {players[1]['name']} is with {players[1]['num_of_wins']} wins")
+        print()
+        self.prGreen("-" * 80)
