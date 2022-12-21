@@ -199,3 +199,7 @@ class tic_tac_toe_3D():
             f"                            {players[1]['name']} is with {players[1]['num_of_wins']} wins")
         print()
         self.prGreen("-" * 80)
+        
+    def print_game_winner(self,players, turn_index):
+        print()
+        self.prGreen('-' * 80)
