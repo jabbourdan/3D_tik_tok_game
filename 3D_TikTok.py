@@ -203,3 +203,7 @@ class tic_tac_toe_3D():
     def print_game_winner(self,players, turn_index):
         print()
         self.prGreen('-' * 80)
+
+        self.prGreen(
+            f"                     {players[turn_index]['name']} is the winner! with the sign {players[turn_index]['sign']}")
+        self.prGreen('-' * 80)
