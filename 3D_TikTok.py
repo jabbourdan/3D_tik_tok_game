@@ -207,3 +207,13 @@ class tic_tac_toe_3D():
         self.prGreen(
             f"                     {players[turn_index]['name']} is the winner! with the sign {players[turn_index]['sign']}")
         self.prGreen('-' * 80)
+        
+def tic_tac_toe_3D(self):
+        another_game = True
+        names = self.get_player_names()
+        turn_index = self.get_random_starter()
+        players = self.create_players(names, turn_index)
+
+        while another_game == True:
+            board = self.init()
+            is_finished = False
