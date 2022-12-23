@@ -208,7 +208,9 @@ class tic_tac_toe_3D():
             f"                     {players[turn_index]['name']} is the winner! with the sign {players[turn_index]['sign']}")
         self.prGreen('-' * 80)
         
-def tic_tac_toe_3D(self):
+
+
+    def tic_tac_toe_3D(self):
         another_game = True
         names = self.get_player_names()
         turn_index = self.get_random_starter()
@@ -217,3 +219,20 @@ def tic_tac_toe_3D(self):
         while another_game == True:
             board = self.init()
             is_finished = False
+
+            turn_index = self.get_random_starter()
+            is_draw = False
+            while not is_finished:
+                is_there_a_winner = self.turn(board, players, turn_index)
+                is_draw = self.check_draw(board)
+                # the game ends if there is a winner or draw
+                is_finished = is_there_a_winner or is_draw
+                if is_there_a_winner == True:
+                    self.update_num_of_wins(players, turn_index)
+                    self.print_board(board)
+                    self.print_game_winner(players, turn_index)
+                
+                turn_index = self.change_turn(turn_index)
+            another_game = self.is_repeat_game()
+
+        self.print_end_message(players)
